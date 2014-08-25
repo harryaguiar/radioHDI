@@ -1,0 +1,103 @@
+/* -- BASIC FORMATTING -------------------------------------------------- */
+
+html { font-size: 62.5%; }
+body {
+	font: 100 1.4em/1.8em Verdana, Arial, Helvetica, sans-serif;
+	color: #888888;
+	margin: 0;
+	padding: 0;
+	background-color: #000;	
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+	margin: 0;	 
+	padding: 0;
+	list-style: none;
+}
+h2 { color: #444444; }
+a {
+	color: #42413C;
+	text-decoration: none;
+}
+
+/* -- SITE STRUCTURE -------------------------------------------------- */
+header, footer, section {
+	width: 960px;
+	width: 100%;
+	margin: 0 auto;
+}
+/* -- HEADER -------------------------------------------------- */
+header { 
+	display: block;
+	padding: 15px 0 0 0;
+}
+header p {
+	float: left;
+	background: #eaeaea; 
+	padding: 5px 20px
+}
+
+/* -- NAVIGATION -------------------------------------------------- */
+nav { 
+	text-align: center;
+	background-color: rgba(255, 0, 0, 0.65);
+	border-top: solid #cccccc 6px;
+	border-bottom: solid #cccccc 6px;
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	position: absolute;
+
+}
+nav li {
+	display: inline-block;
+	position: relative;
+}
+nav li:hover { 
+	background: #000;
+}
+nav li:hover a { 
+	color: #ffffff; 
+}
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 10px 0;
+	min-width: 100%;
+	background: #E88F3F;
+	z-index: 1;
+}
+nav ul ul li {
+	float: none;
+	white-space: nowrap;
+}
+nav li:hover ul {
+	display: block;
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	padding: 5px 20px;
+	color: #ffffff;
+}
+
+/* -- SLIDESHOW -------------------------------------------------- */
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
